@@ -2,6 +2,6 @@
 
 aws dynamodb create-table --cli-input-json file://customers-table.json
 
-sleep 20
+sleep 60
 
 aws dynamodb batch-write-item --request-items file://customer-items.json
