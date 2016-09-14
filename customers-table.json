@@ -1,0 +1,25 @@
+{
+    "TableName": "Customers",
+    "KeySchema": [
+        {
+            "AttributeName": "CustomerId",
+            "KeyType": "HASH"
+        }, {
+            "AttributeName": "Name",
+            "KeyType": "RANGE"
+        }
+    ],
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "CustomerId",
+            "AttributeType": "N"
+        }, {
+            "AttributeName": "Name",
+            "AttributeType": "S"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 5,
+        "WriteCapacityUnits": 5
+    }
+}
